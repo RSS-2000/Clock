@@ -2,6 +2,11 @@ body {
   background-color: rgba(77, 75, 75, 0.927);
 }
 
+h3 {
+  color: rgb(169, 38, 38);
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
+}
 .container {
   height: 100vh;
   display: flex;
