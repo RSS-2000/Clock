@@ -1,138 +1,129 @@
 body {
-    background-color: rgba(77, 75, 75, 0.927);
-  }
-  .container {
-    margin-left: calc(50% - 100px);
-    margin-top: calc(20%);
-  }
-  .circle {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-image: radial-gradient(rgb(152, 152, 152), rgb(0, 0, 0));
-    border: 2px solid black;
-    border-radius: 50%;
-    box-shadow: 2px 2px 20px 2px rgb(31, 31, 31);
-  }
-  .model{
-    position: absolute;
-    color: rgb(237, 130, 130);
-    text-shadow: 1px 1px 3px black;
-    left: 80px;
-    top: 18px;
-  }
-  [class^="number"] {
-    color: red;
-    display: inline;
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    text-align: center;
-    box-shadow: 0 0 2px red;
-    border-radius: 50%;
-    padding: 1px;
-  }
-  .number-point {
-    left: calc(50% - 8px);
-    top: calc(50% - 8px);
-  }
-  .number12 {
-    top: 0;
-    left: calc(50% - 8px);
-  }
-  .number6 {
-    bottom: 0;
-    left: calc(50% - 8px);
-  }
-  .number9 {
-    top: calc(50% - 8px);
-    left: 0;
-  }
-  .number3 {
-    top: calc(50% - 8px);
-    right: 0;
-  }
-  .number1 {
-    top: calc(10% - 8px);
-    right: 23%;
-  }
-  .number2 {
-    top: calc(27% - 8px);
-    right: 7%;
-  }
-  .number11 {
-    top: calc(10% - 8px);
-    left: 23%;
-  }
-  .number10 {
-    top: calc(27% - 8px);
-    left: 7%;
-  }
-  .number4 {
-    top: calc(72% - 8px);
-    right: 7%;
-  }
-  .number5 {
-    top: calc(88% - 8px);
-    right: 22%;
-  }
-  .number8 {
-    top: calc(72% - 8px);
-    left: 7%;
-  }
-  .number7 {
-    top: calc(88% - 8px);
-    left: 22%;
-  }
-  .second {
-    position: absolute;
-    top: 9%;
-    left: 50%;
-    height: 80px;
-    width: 0.1px;
-    border: 1px solid rgb(238, 186, 186);
-    transform-origin: 100% 100%;
-    z-index: 4;
-  }
-  .minutes {
-    position: absolute;
-    top: 20%;
-    left: 49.04%;
-    height: 60px;
-    width: 0.8px;
-    background-color: black;
-    border: 1px solid rgb(245, 128, 128);
-    transform-origin: 100% 100%;
-    z-index: 3;
-  }
-  .time {
-    position: absolute;
-    top: 23%;
-    left: 49.6%;
-    height: 52px;
-    width: 1.2px;
-    background-color: black;
-    border: 1px solid rgb(209, 5, 5);
-    transform-origin: 100% 100%;
-    z-index: 2;
-  }
-  .center-radius {
-    position: absolute;
-    top: calc(50% - 40px);
-    left: calc(50% - 40px);
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    background-image: radial-gradient(gray, rgb(78, 77, 77));
-    box-shadow: 0 0 5px red;
-  }
-  .center-radius2 {
-    position: absolute;
-    top: calc(50% - 5px);
-    left: calc(50% - 5px);
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: rgb(131, 0, 0);
-    z-index: 10;
-  }
+  background-color: rgba(77, 75, 75, 0.927);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  height: 320px;
+  background-image: radial-gradient(rgb(152, 152, 152), rgb(0, 0, 0));
+  border: 2px solid rgb(237, 130, 130);
+  border-radius: 50%;
+  box-shadow: 2px 2px 12px 2px rgb(31, 31, 31);
+}
+
+.model {
+  position: absolute;
+  color: rgb(237, 130, 130);
+  text-shadow: 1px 1px 3px black;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.second {
+  position: absolute;
+  top: 11.9%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+  height: 120px;
+  width: 0.1px;
+  border: 1px solid rgb(238, 186, 186);
+  transform-origin: 100% 100%;
+  z-index: 10;
+}
+
+.minutes {
+  position: absolute;
+  top: 18.5%;
+  left: 49%;
+  height: 100px;
+  width: 0.8px;
+  background-color: black;
+  border: 1px solid rgb(245, 128, 128);
+  transform-origin: 100% 100%;
+  z-index: 9;
+}
+
+.hour {
+  position: absolute;
+  top: 24.5%;
+  left: 49.6%;
+  height: 80px;
+  width: 1.2px;
+  background-color: black;
+  border: 1px solid rgb(209, 5, 5);
+  transform-origin: 100% 100%;
+  z-index: 8;
+}
+
+.center-radius {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(gray, rgb(78, 77, 77));
+  box-shadow: 0 0 5px red;
+  z-index: 2;
+}
+
+.center-radius-small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(131, 0, 0);
+  z-index: 11;
+}
+
+.numbers {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  top: -5px;
+  left: -5px;
+  z-index: 9;
+}
+
+.obod {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 100px;
+  z-index: 3;
+}
+
+.luch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.crown {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 30px);
+  width: 60px;
+}
