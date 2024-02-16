@@ -83,7 +83,7 @@ h3 {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  background-image: radial-gradient(gray, rgb(78, 77, 77));
+  background-image: radial-gradient(rgb(251, 251, 0), rgb(212, 100, 100));
   box-shadow: 0 0 5px red;
   z-index: 2;
 }
