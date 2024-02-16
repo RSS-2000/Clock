@@ -5,8 +5,12 @@ body {
 h3 {
   color: rgb(169, 38, 38);
   text-shadow: 2px 2px 8px black;
-  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
 }
+
 .container {
   height: 100vh;
   display: flex;
